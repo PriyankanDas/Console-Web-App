@@ -1,0 +1,202 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+body {
+    user-select: none;
+    cursor: none;
+    margin: 0;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color:#f3f3f3;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.5s ease;
+    font-family: 'Raleway', sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px black;
+}
+
+.title {
+    font-family: 'Caveat', cursive;
+    font-size: 60px;
+}
+
+.para {
+    font-family: 'Mochiy Pop P One', cursive;
+}
+
+.underline {
+    position: absolute;
+    transform: translateY(-410px);
+    width: 415px;
+    height: 5px;
+    background-color: lightgreen;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+img {
+    width: 23px;
+    vertical-align: middle;
+}
+
+.msimg {
+    width: 20px;
+}
+
+.winimg {
+    width: 25px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 1ms linear infinite; /* Safari */
+    animation: spin 1s linear infinite;
+    transition: opacity 1s ease;
+    position: absolute;
+    z-index: 9999;
+    top: 45%;
+    left: 45%;
+    transform: translate(-45%, -45%);
+    position: fixed;
+    box-shadow: 2px 2px 4px black;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.fadeOut {
+  opacity: 0;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  transition: opacity 1s ease;
+}
+
+.loadingtxt {
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  position: absolute;
+  z-index: 9999;
+  top: 63%;
+  left: 51%;
+  transform: translate(-63%, -51%);
+  position: fixed;
+  font-family: 'Inconsolata', monospace;
+  transition: opacity 1s ease;
+  letter-spacing: 5px;
+}
+
+.line {
+    background-color: black;
+    width: 1910px;
+    height: 3px;
+}
+
+.inpt {
+    width: 300px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-overflow: ellipsis;
+}
+
+.inpt:hover {
+    box-shadow: 0px 0px 2px blue;
+}
+
+.inpt:focus {
+    box-shadow: 0px 0px 4px blue;
+    cursor: text;
+}
+
+.btn {
+    width: 70px;
+    height: 35px;
+    font-family: 'Poppins', sans-serif;
+    background-color: lightblue;
+    transition: all 0.2s ease;
+    border: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 6px black;
+}
+
+.btn:active {
+    transform: scale(1);
+    box-shadow: none;
+}
+
+.namecontainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mathcontainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.output, .about {
+    font-family: 'Mochiy Pop P One', cursive;
+}
+
+.about {
+    font-size: 20px;
+}

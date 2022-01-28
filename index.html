@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="vscode.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Raleway:ital,wght@1,200;1,300;1,500;1,600&family=Caveat:wght@700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <title>Console Web App</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Project on Console</h1>
+        <div class="underline"></div>
+        <p class="para"><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code <img src="vscode.png" alt="Visual Studio Code Logo"></a> is a source-code editor made by <a href="https://microsoft.com/" target="_blank">Microsoft <img class="msimg" src="microsoft-logo.png" alt="Microsoft Logo"></a> for <a href="https://windows.com/" target="_blank">Windows <img class="winimg" src="windows-logo.png" alt="Windows Logo"></a> , <a href="https://www.kernel.org/" target="_blank">Linux <img src="linux-logo.png" alt="Linux Logo"></a> and <a href="https://www.apple.com/in/macos/" target="_blank">macOS <img src="mac-logo.png" alt="macOS Logo"></a> . Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code</p>
+        <p class="para">refactoring, and embedded Git. Users can change the theme, keyboard shortcuts, preferences, and install extensions that add additional functionality.</p>
+        <p class="para">The console.log() method in HTML is used for writing a message in the console. It indicates an important message during testing of any program. The message is sent as a parameter to the console.log() method.</p>
+        <p class="para">To open the console in Chrome, use this keyboard shortcut: Cmd + Option + J (on a Mac) or Ctrl +Shift +J (on Windows).</p>
+        <p class="para">As an alternative, you can right-click on the webpage and click "Inspect" to open the developer console.</p>
+        <p class="para">Click the "Console" tab in that window.</p>
+        <hr class="line">
+        <div class="namecontainer">
+            <h1 class="about">Name</h1>
+            <input class="inpt" id="inptfirstname" placeholder="Type Your or Any Other's First Name Here" autocomplete="off">
+            <input class="inpt" id="inptlastname" placeholder="Type Your or Any Other's Last Name Here" autocomplete="off">
+            <button class="btn" onclick="nameConcat()">Done</button>
+            <h3 class="output" id="nameoutput">Output</h3>
+        </div>
+        <hr class="line">
+        <div class="mathcontainer">
+            <h1 class="about">Math</h1>
+            <input class="inpt" id="inptfirstnum" placeholder="Type Any Number Here" autocomplete="off" type="number" style="appearance: none;">
+            <input class="inpt" id="inptlastnum" placeholder="Type Any Number Here" autocomplete="off" type="number" style="appearance: none;">
+            <button class="btn" onclick="add()">Done</button>
+            <h3 class="output" id="numoutput">Output</h3>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <h1 class="loadingtxt">Loading...</h1>
+    <div class="loader"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
